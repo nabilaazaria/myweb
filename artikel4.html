@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunjungan Universitas Ahmad Dahlan (UAD)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg,  #2a5298, #1e3c72);
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            animation: slideIn 1s ease-in-out;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 10px;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .article-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .article-img:hover {
+            transform: scale(1.05);
+        }
+        .info-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        ul, ol {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li, ol li {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            transition: background 0.3s ease;
+        }
+        ul li:hover, ol li:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kunjungan Universitas Ahmad Dahlan (UAD)</h1>
+        </header>
+        <section class="content">
+            <img src="img/uad.jpg" alt="Kunjungan UAD" class="article-img">
+            <br>
+            <p>Pada Senin, 10 Februari 2024, Universitas Ahmad Dahlan (UAD) mengadakan kunjungan ke SMK N 2 Klaten dalam rangka berbagi informasi mengenai dunia perkuliahan serta memperkenalkan berbagai program studi yang tersedia di kampus mereka. Kegiatan ini bertujuan untuk memberikan wawasan kepada para siswa mengenai pilihan pendidikan tinggi setelah lulus dari SMK. 
+                UAD menawarkan lingkungan akademik yang kondusif dengan fasilitas modern serta tenaga pengajar yang profesional. Kampus ini juga memiliki berbagai program studi unggulan yang mendukung pengembangan karier mahasiswa. Selain itu, UAD menyediakan berbagai program beasiswa bagi mahasiswa berprestasi maupun mereka yang membutuhkan bantuan finansial.
+                Dalam kunjungan ini, tim dari UAD menjelaskan berbagai aspek penting terkait universitas, seperti fakultas yang tersedia, lokasi kampus, program studi, jalur pendaftaran, proses seleksi, fasilitas, dan berbagai keunggulan lainnya.
+            </p></p>
+            <div class="info-box">
+                <h2>Fakultas di Universitas Ahmad Dahlan</h2>
+                <ul>
+                    <li>Fakultas Keguruan dan Ilmu Pendidikan (FKIP)</li>
+                    <li>Fakultas Sains dan Teknologi Terapan (FAST)</li>
+                    <li>Fakultas Hukum</li>
+                    <li>Fakultas Teknologi Industri (FTI)</li>
+                    <li>Fakultas Kesehatan Masyarakat</li>
+                    <li>Fakultas Kedokteran</li>
+                    <li>Fakultas Agama Islam</li>
+                    <li>Fakultas Farmasi</li>
+                    <li>Fakultas Sastra, Budaya, dan Komunikasi</li>
+                    <li>Fakultas Ekonomi dan Bisnis</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Jalur Seleksi di UAD</h2>
+                        <p>✅ Seleksi Bebas Tes:</p>
+                        <p>PMDK Rapor, PMDK SKL, PMDK Non Akademik, PMDK UTBK, PSB Rapor Farmasi, PSB Rapor Psikologi, PSB UTBK Farmasi, PSB UTBK Psikologi</p>
+                        <p>✅ Seleksi Kedokteran:</p>
+                        <p>PSB Rapor Kedokteran, PSB UTBK Kedokteran, PSB Hafiz Qur'an Kedokteran, CBT Kedokteran</p>
+                        <p>✅ Seleksi Tes:</p>
+                        <p>Computer-Based Test (CBT)</p>
+                        <p>✅ Seleksi Beasiswa:</p>
+                        <p>Beasiswa Dokter, Beasiswa Talenta Unggul, Beasiswa BPM KP, Beasiswa BPM SSO, Beasiswa BPM Hafiz Qur'an, Beasiswa Prodigium Fisika, Beasiswa Akademik, Beasiswa Prestasi, Beasiswa KIP Kuliah</p>
+
+
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Alur Pendaftaran</h2>
+                <ol>
+                    <p>Bagi calon mahasiswa yang ingin mendaftar di Universitas Ahmad Dahlan, berikut adalah tahapan pendaftarannya:</p>
+                    <p>1️⃣ Mengisi formulir pendaftaran secara online melalui pmb-online.uad.ac.id.</p>
+                    <p>2️⃣ Membayar biaya pendaftaran melalui teller bank atau transfer virtual account.</p>
+                    <p>3️⃣ Mengikuti proses seleksi sesuai jalur yang dipilih.</p>
+                    <p>4️⃣ Melakukan registrasi ulang bagi yang lolos seleksi.</p>
+                </ol>
+            </div>
+            <p>Pada akhir kegiatan, guru BK SMK N 2 Klaten menyampaikan pesan dan nasihat kepada para siswa agar mulai mempersiapkan diri jika ingin melanjutkan pendidikan ke jenjang yang lebih tinggi. Dengan adanya kunjungan ini, diharapkan siswa mendapatkan gambaran lebih jelas tentang dunia perkuliahan dan semakin termotivasi untuk melanjutkan studi mereka ke universitas.</p>
+            <a href="index.html#artikel" class="back-button">⬅ Kembali ke Beranda</a>
+        </section>
+    </div>
+</body>
+</html>

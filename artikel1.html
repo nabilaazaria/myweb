@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkembangan AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2a5298, #1e3c72);
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            animation: slideIn 1s ease-in-out;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 10px;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .article-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .article-img:hover {
+            transform: scale(1.05);
+        }
+        .info-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            transition: background 0.3s ease;
+        }
+        ul li:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Perkembangan AI</h1>
+        </header>
+        
+        <section class="content">
+            <img src="img/perkembangan ai.jpeg" alt="Perkembangan AI" class="article-img">
+            <p>
+                Artificial Intelligence (AI) berkembang pesat dalam berbagai bidang, mulai dari industri, kesehatan, hingga transportasi. AI membantu otomatisasi produksi, meningkatkan keamanan siber, mempercepat diagnosis medis, dan mendukung kreativitas digital.
+            </p>
+            <div class="info-box">
+                <h2>Tren AI yang Sedang Berkembang</h2>
+                <ul>
+                    <li><strong>Industri & Otomasi:</strong> AI digunakan dalam otomatisasi pabrik dan optimasi rantai pasok.</li>
+                    <li><strong>Keamanan Siber:</strong> AI mendeteksi ancaman siber dengan analisis pola serangan.</li>
+                    <li><strong>Kesehatan:</strong> AI membantu dalam diagnosis medis dan pengembangan obat.</li>
+                    <li><strong>Transportasi:</strong> Kendaraan otonom berbasis AI semakin berkembang.</li>
+                    <li><strong>Pendidikan & Kreativitas:</strong> AI digunakan dalam pembuatan konten digital dan sistem pembelajaran adaptif.</li>
+                </ul>
+            </div>
+            <a href="index.html#artikel" class="back-button">⬅ Kembali ke Artikel</a> 
+        </section>
+
+    </div>
+</body>
+</html>

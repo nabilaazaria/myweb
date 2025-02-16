@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watermark di Microsoft Word</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2a5298, #1e3c72);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        header {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .article-img {
+            width: 50%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        .article-img:hover {
+            transform: scale(1.05);
+        }
+        .text-box {
+            width: 50%;
+            text-align: justify;
+        }
+        .info-box {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Watermark di Microsoft Word</h1>
+    </header>
+    <section class="container">
+        <div class="content">
+            <div class="text-box">
+                <p>
+                    Watermark di Microsoft Word digunakan untuk memberi tanda pada dokumen, baik untuk keperluan branding, kerahasiaan, atau sekadar dekorasi. Berikut langkah-langkah untuk membuat watermark otomatis:
+                </p>
+                <ul>
+                    <li><strong>Menambahkan Watermark Teks:</strong>
+                        <ul>
+                            <li>Buka Microsoft Word dan pilih tab "Design".</li>
+                            <li>Klik "Watermark", lalu pilih salah satu watermark bawaan atau klik "Custom Watermark".</li>
+                            <li>Pilih "Text Watermark", lalu masukkan teks yang diinginkan, atur font, ukuran, dan warna.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Menambahkan Watermark Gambar:</strong>
+                        <ul>
+                            <li>Di menu "Watermark", pilih "Custom Watermark".</li>
+                            <li>Pilih "Picture Watermark", lalu klik "Select Picture" untuk memilih gambar dari komputer.</li>
+                            <li>Atur skala dan transparansi agar tidak mengganggu isi dokumen.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Menghapus atau Mengedit Watermark:</strong>
+                        <ul>
+                            <li>Untuk menghapus, kembali ke menu "Watermark", lalu pilih "Remove Watermark".</li>
+                            <li>Untuk mengedit, ulangi langkah-langkah di atas dan pilih watermark baru.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <img src="img/watermark.jpeg" alt="Watermark di Microsoft Word" class="article-img">
+        </div>
+        <div class="fade-in" style="text-align: center;">
+            <p>Watermark dapat membantu mengamankan dokumen dan memberikan identitas pada setiap halaman. Dengan fitur ini, Anda bisa menyesuaikan dokumen sesuai kebutuhan tanpa mengurangi profesionalisme.</p>
+        </div>
+        <a href="index.html#artikel" class="back-button">⬅ Kembali ke Artikel</a>
+    </section>
+</body>
+</html>

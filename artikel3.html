@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fan System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2a5298, #1e3c72);
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            animation: slideIn 1s ease-in-out;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .artikel-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+        .article-img {
+            width: 50%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        .article-img:hover {
+            transform: scale(1.05);
+        }
+        .text-content {
+            width: 50%;
+        }
+        .info-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart Fan System</h1>
+    </header>
+    <section class="container">
+        <div class="artikel-content">
+            <img src="img/projek4-1.jpg" alt="Perkembangan AI" class="article-img">
+            <div class="text-content">
+                <h2>Proyek Kipas Otomatis Berbasis IoT</h2>
+                <p>
+                    Smart Fan System adalah proyek IoT yang dirancang untuk mengontrol kipas secara otomatis berdasarkan suhu lingkungan.
+                    Kipas akan menyala saat suhu melewati batas tertentu dan mati saat suhu kembali normal.
+                </p>
+                <div class="info-box">
+                    <h3>Fitur Utama</h3>
+                    <ul>
+                        <li>Sensor suhu untuk mendeteksi perubahan lingkungan</li>
+                        <li>Kipas otomatis menyala dan mati sesuai suhu</li>
+                        <li>Layar LCD untuk monitoring suhu dan status kipas</li>
+                        <li>Terintegrasi dengan IoT untuk kontrol jarak jauh</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="info-box">
+            <h3>Komponen Utama</h3>
+            <p>
+                <br> 1️⃣ Wemos D1 → Mikrokontroler berbasis ESP8266 yang digunakan untuk mengontrol seluruh sistem dan bisa dihubungkan ke jaringan WiFi untuk fitur IoT.
+                        <br> 2️⃣ Relay Module → Digunakan sebagai saklar elektronik untuk menghidupkan dan mematikan kipas berdasarkan perintah dari Wemos D1.
+                        <br> 3️⃣ Fan (Kipas DC/AC) → Kipas yang akan menyala secara otomatis saat suhu melebihi batas tertentu.
+                        <br> 4️⃣ LCD 16x2 dengan I2C → Digunakan untuk menampilkan suhu, kelembapan, dan status kipas (ON/OFF).
+                        <br> 5️⃣ DHT11 atau DHT22 Sensor → Sensor suhu dan kelembapan yang membaca kondisi lingkungan dan mengirim data ke Wemos D1.
+                        <br> 6️⃣ Breadboard & Kabel Jumper → Memudahkan penyusunan rangkaian tanpa perlu menyolder komponen.
+            </p>
+        </div>
+        <div class="info-box">
+            <h3>Tantangan dalam Pengembangan</h3>
+            <p>
+                Dalam proses pengembangan, kami menghadapi beberapa kendala teknis:
+                        <br>🔹 Masalah dalam komunikasi antara mikrokontroler dan LCD →  Modul I2C perlu disesuaikan agar bisa menampilkan data dengan benar.
+                        <br>🔹 Kesalahan dalam rangkaian kelistrikan → Koneksi antara relay dan kipas perlu diperbaiki agar kipas dapat bekerja dengan stabil.
+                        <br>🔹 Kipas mau nyala tapi tidak mau mati → Relay masih mengunci daya meskipun suhu sudah turun. 
+            </p>
+        </div>
+        <div class="info-box">
+            <h3>Kesimpulan</h3>
+            <p>
+                Setelah melakukan berbagai perbaikan, proyek akhirnya berhasil berjalan sesuai harapan.
+                            Melalui proyek ini, kami belajar banyak tentang pemrograman mikrokontroler, komunikasi sensor, dan troubleshooting hardware, serta memahami pentingnya kerja sama tim dalam menyelesaikan tantangan teknis.
+            </p>
+        </div>
+        <a href="index.html#artikel" class="back-button">⬅ Kembali ke Artikel</a>
+    </section>
+</body>
+</html>
