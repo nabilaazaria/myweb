@@ -271,7 +271,13 @@
                         <p>Proyek Kipas Otomatis Berbasis IoT yang menyala saat suhu melewati batas dan mati saat suhu kembali normal. Proyek ini dilengkapi LCD untuk monitoring suhu dan status kipas. Dalam prosesnya, kami menghadapi beberapa kendala teknis, tetapi berhasil menyelesaikannya dengan kerja sama tim.</p>
                         <button class="btn" onclick="openModal('modal3')">Baca Selengkapnya</button>
                     </div>
+                    <div class="artikel">
+                        <h2>Smart Fan System</h2>
+                        <p>Proyek Kipas Otomatis Berbasis IoT yang menyala saat suhu melewati batas dan mati saat suhu kembali normal. Proyek ini dilengkapi LCD untuk monitoring suhu dan status kipas. Dalam prosesnya, kami menghadapi beberapa kendala teknis, tetapi berhasil menyelesaikannya dengan kerja sama tim.</p>
+                        <button class="btn" onclick="openModal('modal3')">Baca Selengkapnya</button>
+                    </div>
                 </div>
+                
 
                 <!-- Modal Artikel -->
                 <div id="modal1" class="modal">
@@ -323,6 +329,31 @@
                 </div>
 
                 <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal3')">&times;</span>
+                        <h2>Smart Fan System</h2>
+                        <img src="img/projek4-1.jpg" alt="SIOT DHT11">
+                        <p>Dalam proyek Kipas Otomatis Berbasis IoT, kami membuat sistem yang memungkinkan kipas menyala dan mati secara otomatis tergantung pada suhu ruangan. Prinsip kerjanya sederhana: ketika sensor mendeteksi suhu di atas batas yang ditentukan, kipas akan menyala, dan ketika suhu turun kembali, kipas akan mati.</p>
+                        
+                        <P><br>Komponen Utama:
+                        <br> 1️⃣ Wemos D1 → Mikrokontroler berbasis ESP8266 yang digunakan untuk mengontrol seluruh sistem dan bisa dihubungkan ke jaringan WiFi untuk fitur IoT.
+                        <br> 2️⃣ Relay Module → Digunakan sebagai saklar elektronik untuk menghidupkan dan mematikan kipas berdasarkan perintah dari Wemos D1.
+                        <br> 3️⃣ Fan (Kipas DC/AC) → Kipas yang akan menyala secara otomatis saat suhu melebihi batas tertentu.
+                        <br> 4️⃣ LCD 16x2 dengan I2C → Digunakan untuk menampilkan suhu, kelembapan, dan status kipas (ON/OFF).
+                        <br> 5️⃣ DHT11 atau DHT22 Sensor → Sensor suhu dan kelembapan yang membaca kondisi lingkungan dan mengirim data ke Wemos D1.
+                        <br> 6️⃣ Breadboard & Kabel Jumper → Memudahkan penyusunan rangkaian tanpa perlu menyolder komponen.
+                        <br>
+                        <br>Proses Pembuatan dan Tantangan:
+                        <br>Dalam proses pengembangan, kami menghadapi beberapa kendala teknis:
+                        <br>🔹 Masalah dalam komunikasi antara mikrokontroler dan LCD →  Modul I2C perlu disesuaikan agar bisa menampilkan data dengan benar.
+                        <br>🔹 Kesalahan dalam rangkaian kelistrikan → Koneksi antara relay dan kipas perlu diperbaiki agar kipas dapat bekerja dengan stabil.
+                        <br>🔹 Kipas mau nyala tapi tidak mau mati → Relay masih mengunci daya meskipun suhu sudah turun. 
+                        <br></P>
+                        <p>Setelah melakukan berbagai perbaikan, proyek akhirnya berhasil berjalan sesuai harapan.
+                            Melalui proyek ini, kami belajar banyak tentang pemrograman mikrokontroler, komunikasi sensor, dan troubleshooting hardware, serta memahami pentingnya kerja sama tim dalam menyelesaikan tantangan teknis.</p>
+                    </div>
+
+                     <div id="modal3" class="modal">
                     <div class="modal-content">
                         <span class="close" onclick="closeModal('modal3')">&times;</span>
                         <h2>Smart Fan System</h2>
