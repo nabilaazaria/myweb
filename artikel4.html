@@ -88,6 +88,72 @@
             from { opacity: 0; transform: translateX(-50px); }
             to { opacity: 1; transform: translateX(0); }
         }
+
+        @media screen and (max-width: 991.98px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .content {
+                padding: 0 10px;
+            }
+
+            .article-img {
+                width: 80%;
+                max-width: 100%;
+            }
+
+            .info-box {
+                padding: 12px;
+            }
+
+            ul li, ol li {
+                font-size: 0.9em;
+            }
+
+            .back-button {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+        }
+
+        /* Responsif untuk perangkat mobile */
+        @media screen and (max-width: 576px) {
+            .container {
+                width: 95%;
+                margin: 30px auto;
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 1.3em;
+            }
+
+            .article-img {
+                width: 100%;
+                max-width: 100%;
+                order: -1; /* Gambar muncul di atas */
+            }
+
+            .info-box {
+                padding: 10px;
+            }
+
+            ul li, ol li {
+                font-size: 0.85em;
+                padding: 8px;
+            }
+
+            .back-button {
+                font-size: 0.85em;
+                padding: 6px 12px;
+            }
+        }
     </style>
 </head>
 <body>
