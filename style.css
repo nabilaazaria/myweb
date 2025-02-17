@@ -722,6 +722,50 @@ h3{
     .kartu-partner{
         width: 50%;
     }
+
+    .kartu-partner img{
+        width: 50%;
+        width: 150px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+
+    .about-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .artikel-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .artikel {
+        width: 45%; /* 2 artikel dalam satu baris untuk tablet */
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 45%; /* 2 kolom di tablet */
+        margin-bottom: 20px;
+    }
     
 }
 
