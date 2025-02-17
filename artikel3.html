@@ -78,6 +78,85 @@
         .back-button:hover {
             background: rgba(255, 255, 255, 0.4);
         }
+
+        @media screen and (max-width: 991.98px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .artikel-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .article-img {
+                width: 80%;
+                max-width: 100%;
+                order: -1; /* Gambar muncul di atas */
+            }
+
+            .text-content {
+                width: 80%;
+            }
+
+            .info-box {
+                padding: 10px;
+            }
+
+            ul li {
+                font-size: 0.9em;
+                padding: 5px;
+            }
+
+            .back-button {
+                font-size: 0.9em;
+                padding: 8px 12px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                width: 95%;
+                margin: 30px auto;
+            }
+
+            header h1 {
+                font-size: 1.3em;
+            }
+
+            .artikel-content {
+                gap: 10px;
+                flex-direction: column;
+            }
+
+            .article-img {
+                width: 100%;
+                max-width: 100%;
+                order: -1; /* Gambar muncul di atas */
+            }
+
+            .text-content {
+                font-size: 0.9em;
+            }
+
+            ul li {
+                font-size: 0.85em;
+                padding: 5px;
+            }
+
+            .back-button {
+                font-size: 0.85em;
+                padding: 6px 10px;
+            }
+        }
+
+
     </style>
 </head>
 <body>
